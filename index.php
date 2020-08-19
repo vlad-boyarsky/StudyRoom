@@ -15,14 +15,14 @@ echo "<br>";
 echo $guest->getEmail();
 echo "<hr>";
 
-$student = new Student('John Doe', 'john@email.com', 25, 4.5);
+$student = new Student('Alex Mess', 'alex@gmail.com', 25, 5);
 
 echo $student->getSummaryLine();
 
 echo "<br>";
 
 
-$coach = new Coach('Alex', 'email@gmail.com', 28, 'PHP');
+$coach = new Coach('Serova Cassel', 'cassel@gmail.com', 40, 'Study Math Lib');
 
 echo $coach->getSummaryLine();
 echo "<br>";
