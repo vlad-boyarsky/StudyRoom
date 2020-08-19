@@ -2,16 +2,16 @@
 
 class Student extends PersonAbstract
 {
-    protected $avarangeMark;
+    protected int $averageMark;
 
-    public function __construct($fullName, $email, $age, $avarangeMark)
+    public function __construct(string $fullName, string $email, int $age, int $averageMark)
     {
         parent::__construct($fullName, $email, $age);
-        $this->avarangeMark = $avarangeMark;
+        $this->averageMark = $averageMark;
     }
 
     public function getSummaryLine(): string
     {
-        return $this->fullName . ' - ' . $this->avarangeMark;
+        return $this->fullName . ' - ' . $this->averageMark;
     }
 }

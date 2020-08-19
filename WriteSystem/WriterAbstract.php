@@ -2,7 +2,7 @@
 
 abstract class WriterAbstract
 {
-    protected $persons = [];
+    protected array $persons = [];
 
     public function addPerson(WritableInterface $person)
     {

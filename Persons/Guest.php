@@ -2,11 +2,11 @@
 
 class Guest implements WritableInterface
 {
-    protected $email;
-    protected $feedBack;
-    protected $phone;
+    protected string $email;
+    protected string $feedBack;
+    protected int $phone;
 
-    public function __construct($email, $feedBack, $phone)
+    public function __construct(string $email, string $feedBack, int $phone)
     {
         $this->email = $email;
         $this->feedBack = $feedBack;
@@ -22,4 +22,5 @@ class Guest implements WritableInterface
     {
         return $this->phone . ' - ' . $this->feedBack;
     }
+
 }

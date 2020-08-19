@@ -2,9 +2,10 @@
 
 class Coach extends PersonAbstract
 {
-    protected $course;
 
-    public function __construct($fullName, $email, $age, $course)
+    protected string $course;
+
+    public function __construct(string $fullName, string $email, int $age, string $course)
     {
         parent::__construct($fullName, $email, $age);
         $this->course = $course;
@@ -14,4 +15,5 @@ class Coach extends PersonAbstract
     {
         return $this->email . ' - ' . $this->course;
     }
+
 }

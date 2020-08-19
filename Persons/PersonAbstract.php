@@ -2,10 +2,9 @@
 
 abstract class PersonAbstract implements WritableInterface
 {
-
-    protected $fullName;
-    protected $email;
-    protected $age;
+    protected string $fullName;
+    protected string $email;
+    protected int $age;
 
     public function __construct($fullName, $email, $age)
     {
